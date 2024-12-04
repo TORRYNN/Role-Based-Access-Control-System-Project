@@ -1,0 +1,211 @@
+/* General body styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+.cont {
+	width: 100%;
+	display: flex;
+	height: 100vh;
+}
+
+/* Sidebar styling */
+#sidebar {
+	width: 250px;
+	background-color: #333;
+	color: white;
+	padding: 15px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+#sidebar h3 {
+	color: white;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#sidebar button {
+	background-color: #444;
+	color: white;
+	border: none;
+	padding: 10px;
+	text-align: left;
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+#sidebar button:hover {
+	background-color: #555;
+}
+
+/* Main content styling */
+#main-content {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	background-color: #f9f9f9;
+}
+#role-management{
+    display: none;
+}
+
+
+
+#main-content h2{
+    text-align: center;
+}
+.section{
+    /* background-color: red; */
+    padding: 20px;
+    border-radius: 20px;
+    height: calc(100vh - 40px);
+    box-shadow: 0 8px 32px 0 rgba(39, 39, 43, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+
+/* Mobile responsiveness */
+
+/* Table styles */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+table th,
+table td {
+	padding: 10px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+table th {
+	background-color: #4caf50;
+	color: white;
+    text-align: center;
+}
+
+table tbody tr:hover {
+	background-color: #f1f1f1;
+	
+}
+
+/* Button styles */
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+
+/* Styling for form elements */
+.input-field {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.submit-btn {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.submit-btn:hover {
+	background-color: #45a049;
+}
+
+/* Styling for form labels */
+form label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+/* Basic styling for tables */
+table {
+	width: 100%;
+	margin-top: 20px;
+	border-collapse: collapse;
+    cursor: pointer;
+}
+
+table,
+th,
+td {
+	border: 1px solid #ddd;
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #f4f4f4;
+}
+fieldset{
+    padding:20px;
+}
+
+fieldset legend{
+    font-size:20px;
+    font-weight: bold;
+
+}
+
+
+.fform{
+    background-color: #fff;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(39, 39, 43, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.form-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}

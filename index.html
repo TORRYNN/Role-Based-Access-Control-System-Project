@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBAC System</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="cont">
+    <!-- Sidebar Navigation -->
+    <div id="sidebar">
+        <h3>RBAC System</h3>
+        <button onclick="showSection('user-management')">User Management</button>
+        <button onclick="showSection('role-management')">Role Management</button>
+        <button onclick="showSection('permissions-management')">Permission Assignment</button>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- User Management -->
+        <div id="user-management" class="section">
+            <h2>User Management</h2><br>
+            <button id="add-user-btn">Add User</button>
+            <table id="user-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User rows will be dynamically rendered here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Role Management -->
+        <div id="role-management" class="section">
+            <h2>Role Management</h2><br>
+            <button id="add-role-btn">Add Role</button>
+        
+            <table id="role-table">
+                <thead>
+                    <tr>
+                        <th>Role Name</th>
+                        <th>Permissions</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+
+        <!-- Permissions Management -->
+        <div id="permissions-management" class="section" style="display: none;">
+            <h2>Permission Assignment</h2>
+            <form id="assign-permissions-form">
+                <label for="role">Select Role:</label>
+                <select id="role">
+                    <!-- Roles dynamically populated here -->
+                </select>
+                <br><br>
+                <fieldset>
+                    <legend>Permissions</legend>
+                    <label><input type="checkbox" value="Read"> Read</label>
+                    <label><input type="checkbox" value="Write"> Write</label>
+                    <label><input type="checkbox" value="Delete"> Delete</label>
+                </fieldset><br>
+                <button type="submit">Assign Permissions</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+
+</html>
